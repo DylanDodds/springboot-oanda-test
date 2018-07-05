@@ -1,0 +1,7 @@
+# OAndaConfig
+
+oanda:
+  api-token:
+  username:
+  account-number:
+  url: https://api-fxpractice.oanda.com # Test API Environment
