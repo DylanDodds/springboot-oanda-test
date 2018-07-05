@@ -2,6 +2,7 @@ package com.dylandodds.resttest.resttest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication(scanBasePackages={
 		"com.dylandodds.resttest.resttest.service",
@@ -11,6 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 })
 public class ResttestApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(ResttestApplication.class, args);
+	    new SpringApplicationBuilder(ResttestApplication.class).web(false).run(args);
 	}
 }
